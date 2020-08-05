@@ -7,9 +7,8 @@ import com.google.gson.GsonBuilder
 import retrofit2.*
 import retrofit2.converter.gson.GsonConverterFactory
 
-class Data {
-    var repo: MutableMap<String, MutableList<Base>> = mutableMapOf()
-
+object Data {
+    var repo: MutableMap <String, MutableList<Base>> = mutableMapOf()
     private fun loadData(item: String, callback: (List<Base>) -> (Unit)) {
         val retrofit: Retrofit = Retrofit.Builder()
             .baseUrl("https://raw.githubusercontent.com/karl-park/com.ninetynine.healthysalad/master/server/")

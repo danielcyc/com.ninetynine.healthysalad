@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/create_salad"
+        android:id="@+id/create_salad_button"
         android:layout_width="@dimen/box_width"
         android:layout_height="@dimen/box_height"
         android:layout_marginTop="@dimen/box_top_margin"

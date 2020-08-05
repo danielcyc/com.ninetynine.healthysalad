@@ -1,20 +1,11 @@
 package com.example.domain
 
-class Order(){
-    private object Holder {
-        val Instance = Order()
+object Order {
+    private val order : MutableList<Base> = mutableListOf()
+    fun addItem(base : Base) {
+        this.order.add(base)
     }
-    
-    companion object{
-        val instance : Order by lazy {Holder.Instance}
-        private val order : MutableList<Base> = mutableListOf()
-
-        fun addItem(base : Base) {
-            this.order.add(base)
-        }
-        fun getOrder(): MutableList<Base> {
-            return this.order
-        }
-
+    fun getOrder(): MutableList<Base> {
+        return this.order
     }
 }

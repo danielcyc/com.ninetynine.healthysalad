@@ -13,13 +13,19 @@ class TitleFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var v : View = inflater.inflate(R.layout.fragment_title,container, false)
-        val openChooseFrag: Button = v.findViewById(R.id.create_salad)
+        var view : View = inflater.inflate(R.layout.fragment_title,container, false)
+        val selectIngredientFragment = SelectIngredientFragment.newInstance(getString(R.string.first_select_ingredient_fragment))
+        val openChooseFrag: Button = view.findViewById(R.id.create_salad_button)
         openChooseFrag.setOnClickListener {
             activity!!.supportFragmentManager
-                .beginTransaction().replace(R.id.activity_main, SelectProteinFragment())
+                .beginTransaction().replace(R.id.activity_main, selectIngredientFragment)
                 .addToBackStack(null).commit()
         }
-        return v
+        return view
+    }
+    companion object {
+        @JvmStatic
+        fun newInstance() =
+            TitleFragment().apply {}
     }
 }

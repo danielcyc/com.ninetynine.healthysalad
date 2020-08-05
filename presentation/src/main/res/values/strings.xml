@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">HealthySalad</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">This is the title fragment</string>
     <string name="choose_string">Choose Menu</string>
     <string name="customise_button_text">Customise</string>
@@ -11,10 +10,11 @@
     <string name="create_salad_button">Create Salad</string>
     <string name="salad_selections_button">Salad Selections</string>
     <string name="select_menu_description">Select Menu</string>
-    <string name="select_base_text">Select Base</string>
     <string name="back_button_text">Back</string>
     <string name="next_button">next</string>
-    <string name="select_protein_text">Select Protein</string>
     <string name="select_ingredient_text">ingredient</string>
+    <string name="order_summary">order summary</string>
+    <string name="last_ingredient_fragment">soft</string>
+    <string name="first_select_ingredient_fragment">base</string>
 
 </resources>
