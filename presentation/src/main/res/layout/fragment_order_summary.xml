@@ -42,9 +42,30 @@
         android:layout_marginTop="12dp"
         android:layout_marginBottom="16dp"
         android:scrollbars="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/next_button"
+        app:layout_constraintBottom_toTopOf="@+id/order_summary_total"
         app:layout_constraintTop_toBottomOf="@id/back_button"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <TextView
+        android:id="@+id/order_summary_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/back_button_margin_start"
+        android:layout_marginTop="@dimen/back_button_margin_top"
+
+        android:text="Total:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@id/next_button"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/order_summary_total_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/back_button_margin_start"
+        android:layout_marginTop="@dimen/back_button_margin_top"
+        android:text="$100"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/next_button"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

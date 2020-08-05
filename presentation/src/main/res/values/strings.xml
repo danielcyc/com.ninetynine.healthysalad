@@ -11,9 +11,9 @@
     <string name="salad_selections_button">Salad Selections</string>
     <string name="select_menu_description">Select Menu</string>
     <string name="back_button_text">Back</string>
-    <string name="next_button">next</string>
+    <string name="next_button">Next</string>
     <string name="select_ingredient_text">ingredient</string>
-    <string name="order_summary">order summary</string>
+    <string name="order_summary">Order Summary</string>
     <string name="last_ingredient_fragment">soft</string>
     <string name="first_select_ingredient_fragment">base</string>
 
